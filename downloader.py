@@ -1,6 +1,6 @@
 import os, time, getpass, sys, io
 from selenium import webdriver
-path = os.path.join(os.getcwd(), "chromedriver.exe")
+path = os.path.join(os.getcwd(), "chromedriver")
 driver = webdriver.Chrome(path)
 login_url = 'http://{domain}.contest.codeforces.com/enter'
 url = ''
