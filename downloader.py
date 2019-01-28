@@ -123,7 +123,7 @@ def get_submissions():
                 continue
             sub_id = data[0]
             name = data[3]
-            prob = data[4]
+            prob = data[data.index('-') - 1]
             code = parse_submission(sub_id)
             extension = get_ext(data)
 
